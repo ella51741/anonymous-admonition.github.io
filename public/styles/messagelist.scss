@@ -36,7 +36,7 @@
       width: 80px;
       height: 68px;
       position: absolute;
-      left: 57vw;
+      left: 62vw;
       top: 40vh;
       background-image: url("/styles/img/angels.png");
       animation: play 1s steps(2) infinite alternate;
@@ -53,7 +53,8 @@
     //     top: 41vh;
     //   }
     // }
-    p {
+    .p {
+      text-decoration: none;
       color: red;
       background-color: white;
       border-radius: 10px;
@@ -61,7 +62,7 @@
       font-size: 0.5rem;
       display: inline;
       position: absolute;
-      left: 57vw;
+      left: 62vw;
       top: 30vh;
       animation: jump 0.5s ease-in-out 0.5s infinite forwards;
       &:hover {
