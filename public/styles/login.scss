@@ -1,0 +1,125 @@
+.login {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: #eb7d4e;
+    padding: 1rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      margin: 0.5rem;
+      background-color: #bae0ff;
+      border: 0.1rem solid #5d6c89;
+      color: #5d6c89;
+      font-size: 1rem;
+    }
+    button {
+      font-size: 1rem;
+      align-self: center;
+      margin: 0.5rem;
+      background-color: #bae0ff;
+      border: 0.1rem solid #5d6c89;
+      color: #5d6c89;
+      &:hover {
+        background-color: #ffe3aa;
+        border: 0.1rem solid #eb7d4e;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: #5d6c89;
+        font-size: 1rem;
+        &:hover {
+          color: #eb7d4e;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.signup {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    color: #eb7d4e;
+    padding: 1rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input {
+      margin: 0.5rem;
+      background-color: #bae0ff;
+      border: 0.1rem solid #5d6c89;
+      color: #5d6c89;
+      font-size: 1rem;
+    }
+    p {
+      color: #eb7d4e;
+    }
+    button {
+      font-size: 1rem;
+      align-self: center;
+      margin: 0.5rem;
+      background-color: #bae0ff;
+      border: 0.1rem solid #5d6c89;
+      color: #5d6c89;
+      &:hover {
+        background-color: #ffe3aa;
+        border: 0.1rem solid #eb7d4e;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        color: #5d6c89;
+        font-size: 1rem;
+        &:hover {
+          color: #eb7d4e;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: auto;
+    height: 15vh;
+  }
+}
+
+.i12 {
+  animation: jump 0.5s ease 2s infinite forwards;
+}
+.i13 {
+  animation: jump 0.5s ease 1.5s infinite forwards;
+}
+.i14 {
+  animation: jump 0.5s ease 1s infinite forwards;
+}
+.i15 {
+  animation: jump 0.5s ease 1.5s infinite forwards;
+}
+.i17 {
+  animation: jump 0.5s ease 2s infinite forwards;
+}
+
+@keyframes jump {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0, 15px);
+  }
+}

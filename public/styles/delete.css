@@ -1,0 +1,19 @@
+.delete li {
+  margin: 1rem;
+}
+
+.delete li a {
+  display: inline-block;
+  width: 25vw;
+  text-decoration: none;
+  color: #ffe3aa;
+  font-size: 1.5rem;
+}
+
+.delete li button {
+  margin: 0 0 0 1rem;
+  padding: 0.25rem;
+  background-color: #bae0ff;
+  border: 0.1rem solid #5d6c89;
+}
+/*# sourceMappingURL=delete.css.map */

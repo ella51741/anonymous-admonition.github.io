@@ -1,0 +1,138 @@
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 3rem 1rem 0 0;
+}
+
+.list li a {
+  display: inline-block;
+  width: 30vw;
+  margin: 0.25rem 0;
+  font-size: 1.5rem;
+  color: #ffe3aa;
+  text-decoration: none;
+}
+
+.list li a:hover {
+  -webkit-transform: translate(0, 2px);
+          transform: translate(0, 2px);
+}
+
+.list li p {
+  display: none;
+  width: 25vw;
+  margin: 0.25rem 0;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.list li img {
+  width: auto;
+  height: 5vh;
+  padding: 0.25rem;
+}
+
+.list .religion {
+  cursor: pointer;
+}
+
+.list .religion .man {
+  padding: 1px;
+  width: 80px;
+  height: 68px;
+  position: absolute;
+  left: 57vw;
+  top: 40vh;
+  background-image: url("/styles/img/angels.png");
+  -webkit-animation: play 1s steps(2) infinite alternate;
+          animation: play 1s steps(2) infinite alternate;
+}
+
+.list .religion p {
+  color: red;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.25rem;
+  font-size: 0.5rem;
+  display: inline;
+  position: absolute;
+  left: 57vw;
+  top: 30vh;
+  -webkit-animation: jump 0.5s ease-in-out 0.5s infinite forwards;
+          animation: jump 0.5s ease-in-out 0.5s infinite forwards;
+}
+
+.list .religion p:hover {
+  -webkit-box-shadow: 3px 3px 100px #f3d42e;
+          box-shadow: 3px 3px 100px #f3d42e;
+  background-color: #f3d42e;
+}
+
+.list .done {
+  display: block;
+  color: #2d2e1c;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 1px);
+            transform: translate(0, 1px);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 1px);
+            transform: translate(0, 1px);
+  }
+}
+
+@-webkit-keyframes play {
+  from {
+    background-position: -18px;
+  }
+  to {
+    background-position: -197px;
+  }
+}
+
+@keyframes play {
+  from {
+    background-position: -18px;
+  }
+  to {
+    background-position: -197px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .list {
+    padding: 1rem 0 0 0;
+  }
+  .list li a {
+    font-size: 1rem;
+    width: 40vw;
+  }
+  .list li p {
+    width: 40vw;
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+/*# sourceMappingURL=messagelist.css.map */

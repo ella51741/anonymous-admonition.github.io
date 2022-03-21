@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="YiJing(Ella) Chiang" />
+    <meta name="robots" content="index,follow" />
+    <meta name="rating" content="General" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="這是一個匿名懺悔網站/This is Anonymous Admonition website"
+    />
+    <base target="_self" />
+    <!-- google font -->
+    <!-- animation css -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css">
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- page icon  -->
+    <link rel="shortcut icon" href="/styles/img/祈禱.png" />
+    <link rel="bookmark" href="/styles/img/祈禱.png" />
+    <title>匿名懺悔網站</title>
+  </head>
+  <body>
+    <nav>
+      <button>
+        <a href="/addmessage"><i class="fa-solid fa-plus">MSG</i></a>
+      </button>
+      <button>
+        <a href="/login"><i class="fa-solid fa-user"> GUARD</i></a>
+      </button>
+    </nav>
+    <div class="container">
+      <div class="tittle">
+        <p>You are at</p>
+        <h1>Anonymous Admonition<img src="/styles/img/祈禱.png" alt="" /></h1>
+      </div>
+      <div class="list">
+        <% data.forEach(message => { %>
+        <li>
+          <a id="topic" key="<%= message._id %>" href="">&dagger;<%= message.topic %><p><%= message.content %></p></a> 
+        </li>
+        <%console.log(message._id)%> <% }) %>
+        <a href="./addmessage">
+          <div class="Catholic religion">
+            <!-- <img class="place" src="/styles/img/十字架.png" alt="" /> -->
+            <!-- <img class="man" src="/styles/img/angels.png" alt="" /> -->
+            <a href="#" class="man"></a>
+            <p>快來懺悔吧</p>
+          </div>
+        </a>
+        </div>
+      </div>
+    </div>
+    <script>
+window.onload = function () {       
+        let topic = document.querySelectorAll("#topic");
+        console.log(topic);
+        for (let i = 0; i <topic.length; i++) {
+          topic[i].addEventListener("click", showContent);
+        }
+      };
+      function showContent(e){    //點選下拉內容
+        event.preventDefault();
+        let elem = e.target.children;
+        let p =elem[0];
+        console.log(p);
+        // p.style.display="block";
+        p.classList.toggle("done");
+      }  
+      
+    </script>
+  </body> 
+</html>

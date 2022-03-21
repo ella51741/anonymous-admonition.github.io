@@ -1,0 +1,200 @@
+.login {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login h3 {
+  color: #eb7d4e;
+  padding: 1rem;
+}
+
+.login form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.login form input {
+  margin: 0.5rem;
+  background-color: #bae0ff;
+  border: 0.1rem solid #5d6c89;
+  color: #5d6c89;
+  font-size: 1rem;
+}
+
+.login form button {
+  font-size: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0.5rem;
+  background-color: #bae0ff;
+  border: 0.1rem solid #5d6c89;
+  color: #5d6c89;
+}
+
+.login form button:hover {
+  background-color: #ffe3aa;
+  border: 0.1rem solid #eb7d4e;
+  cursor: pointer;
+}
+
+.login form button a {
+  text-decoration: none;
+  color: #5d6c89;
+  font-size: 1rem;
+}
+
+.login form button a:hover {
+  color: #eb7d4e;
+  cursor: pointer;
+}
+
+.signup {
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup h3 {
+  color: #eb7d4e;
+  padding: 1rem;
+}
+
+.signup form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signup form input {
+  margin: 0.5rem;
+  background-color: #bae0ff;
+  border: 0.1rem solid #5d6c89;
+  color: #5d6c89;
+  font-size: 1rem;
+}
+
+.signup form p {
+  color: #eb7d4e;
+}
+
+.signup form button {
+  font-size: 1rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0.5rem;
+  background-color: #bae0ff;
+  border: 0.1rem solid #5d6c89;
+  color: #5d6c89;
+}
+
+.signup form button:hover {
+  background-color: #ffe3aa;
+  border: 0.1rem solid #eb7d4e;
+  cursor: pointer;
+}
+
+.signup form button a {
+  text-decoration: none;
+  color: #5d6c89;
+  font-size: 1rem;
+}
+
+.signup form button a:hover {
+  color: #eb7d4e;
+  cursor: pointer;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer img {
+  width: auto;
+  height: 15vh;
+}
+
+.i12 {
+  -webkit-animation: jump 0.5s ease 2s infinite forwards;
+          animation: jump 0.5s ease 2s infinite forwards;
+}
+
+.i13 {
+  -webkit-animation: jump 0.5s ease 1.5s infinite forwards;
+          animation: jump 0.5s ease 1.5s infinite forwards;
+}
+
+.i14 {
+  -webkit-animation: jump 0.5s ease 1s infinite forwards;
+          animation: jump 0.5s ease 1s infinite forwards;
+}
+
+.i15 {
+  -webkit-animation: jump 0.5s ease 1.5s infinite forwards;
+          animation: jump 0.5s ease 1.5s infinite forwards;
+}
+
+.i17 {
+  -webkit-animation: jump 0.5s ease 2s infinite forwards;
+          animation: jump 0.5s ease 2s infinite forwards;
+}
+
+@-webkit-keyframes jump {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+}
+/*# sourceMappingURL=login.css.map */

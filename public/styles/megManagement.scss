@@ -1,0 +1,25 @@
+.megManagement {
+  li {
+    margin: 1rem;
+    a {
+      display: inline-block;
+      width: 25vw;
+      text-decoration: none;
+      color: #ffe3aa;
+      font-size: 1.5rem;
+      &:hover {
+        transform: translate(0, 2px);
+      }
+    }
+    button {
+      cursor: pointer;
+      margin: 0 0 0 1rem;
+      padding: 0.25rem;
+      background-color: #bae0ff;
+      border: 0.1rem solid #5d6c89;
+      &:hover {
+        transform: translate(0, 2px);
+      }
+    }
+  }
+}

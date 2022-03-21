@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "cute", sans-serif;
+}
+@font-face {
+  font-family: "cute";
+  src: url(/styles/小賴字體.ttf);
+}
+body {
+  background-color: #1c5c99;
+  padding: 1.5rem;
+  width: 100vw;
+  min-height: 100vh;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  button {
+    margin: 0 0 0 1rem;
+    padding: 0.25rem;
+    background-color: #bae0ff;
+    border: 0.1rem solid #5d6c89;
+    border-radius: 10%;
+    &:hover {
+      background-color: #ffe3aa;
+      border: 0.1rem solid #eb7d4e;
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: #5d6c89;
+      font-size: 0.5rem;
+      &:hover {
+        color: #eb7d4e;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tittle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    font-size: 1.5rem;
+    color: #ffe3aa;
+  }
+  h1 {
+    font-size: 2.5rem;
+    color: #ffe3aa;
+  }
+  img {
+    width: auto;
+    height: 3rem;
+  }
+}
+
+@import url(/styles/messagelist.css);
+@import url(/styles/addmessage.css);
+@import url(/styles/login.css);
+@import url(/styles/megManagement.css);
+
+@media screen and (max-width: 350px) {
+  .tittle {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+//reSignup

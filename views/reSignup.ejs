@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="YiJing(Ella) Chiang" />
+    <meta name="robots" content="index,follow" />
+    <meta name="rating" content="General" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="這是一個匿名懺悔網站/This is Anonymous Admonition website"
+    />
+    <base target="_self" />
+    <!-- google font -->
+    <!-- animation css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcss.com/animate.css/3.7.0/animate.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 外部CSS -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- page icon  -->
+    <link rel="shortcut icon" href="/styles/img/祈禱.png" />
+    <link rel="bookmark" href="/styles/img/祈禱.png" />
+    <title>匿名懺悔網站</title>
+  </head>
+  <body>
+    <nav>
+      <button>
+        <a href="/"><i class="fa-solid fa-house">HOME</i></a>
+      </button>
+      <button>
+        <a href="/addmessage"><i class="fa-solid fa-plus">MSG</i></a>
+      </button>
+    </nav>
+    <!-- 這是登入畫面 -->
+    <div class="container">
+      <div class="login" style="display: none">
+        <form method="POST" action="/login">
+          <h3>WELECOME BACK !</h3>
+          <div>
+            <input
+              placeholder="Username(required)"
+              type="email"
+              name="username"
+              required
+            />
+          </div>
+          <div>
+            <input
+              placeholder="Password(required)"
+              type="password"
+              name="password"
+              required
+            />
+          </div>
+
+          <button type="submit">登入</button>
+          <button><a onclick="signup()" href="">來去註冊</a></button>
+        </form>
+      </div>
+      <!-- 這是註冊畫面 -->
+      <div class="signup">
+        <form method="POST" action="/signup">
+          <h3>WELECOME !</h3>
+          <div>
+            <input
+              placeholder="Email(required)"
+              type="email"
+              name="username"
+              required
+            />
+          </div>
+          <!-- <p>We'll never share your email with anyone else.</p> -->
+          <div>
+            <input
+              placeholder="password(required)"
+              type="password"
+              name="password"
+              required
+            />
+          </div>
+          <button type="submit">註冊</button>
+          <button><a onclick="login()" href="">來去登入</a></button>
+        </form>
+      </div>
+      <footer>
+        <div>
+          <img class="i12" src="/styles/img/12.svg" alt="" />
+          <img class="i13" src="/styles/img/13.svg" alt="" />
+          <img class="i14" src="/styles/img/14.svg" alt="" />
+          <img class="i15" src="/styles/img/15.svg" alt="" />
+          <img class="i17" src="/styles/img/17.svg" alt="" />
+        </div>
+      </footer>
+    </div>
+    <script>
+      alert("此帳號已使用，請用其他帳號註冊，謝謝");
+      function signup() {
+        //點選註冊畫面出來
+        event.preventDefault();
+        let signup = document.querySelector(".signup");
+        signup.style.display = "block";
+        console.log(signup);
+        let login = document.querySelector(".login");
+        login.style.display = "none";
+      }
+      function login() {
+        //點選註冊畫面出來
+        event.preventDefault();
+        let signup = document.querySelector(".signup");
+        signup.style.display = "none";
+        console.log(signup);
+        let login = document.querySelector(".login");
+        login.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
