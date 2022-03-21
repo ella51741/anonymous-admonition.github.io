@@ -2,7 +2,7 @@
 // npm install dotenv express ejs body-parser method-override node-fetch
 // npm install cookie-parser express-session connect-flash bcrypt mongoose
 
-const PORT = process.env.port || 5000;
+const PORT = process.env.PORT || 3000;
 //server 機密資料保護
 require("dotenv").config();
 //express
