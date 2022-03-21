@@ -56,9 +56,10 @@ const requireLogin = (req, res, next) => {
 const mongoose = require("mongoose");
 const Message = require("./models/message");
 const User = require("./models/user");
+const url = process.env.URL;
 //2.連結資料庫  tryDB是要導入網頁的資料庫名稱，可以改
 mongoose
-  .connect("mongodb://localhost:27017/tryDB", {
+  .connect(url, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
