@@ -105,4 +105,10 @@ nav button a:hover {
     font-size: 2rem;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .tittle h1 {
+    padding: 0 0 0 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

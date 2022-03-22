@@ -3,12 +3,24 @@
     margin: 1rem;
     a {
       display: inline-block;
-      width: 25vw;
-      text-decoration: none;
-      color: #ffe3aa;
+      width: 30vw;
+      margin: 0.25rem 0;
       font-size: 1.5rem;
+      color: #ffe3aa;
+      text-decoration: none;
       &:hover {
         transform: translate(0, 2px);
+      }
+    }
+    p {
+      display: none;
+      width: 25vw;
+      margin: 0.25rem 0;
+      font-size: 1.5rem;
+      padding: 0.5rem;
+      &.done {
+        display: block;
+        color: #2d2e1c;
       }
     }
     button {

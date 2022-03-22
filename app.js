@@ -214,7 +214,7 @@ app.get("/megManagement", requireLogin, async (req, res) => {
     console.log(data);
     res.render("megManagement.ejs", { data });
   } catch {
-    console.log("Error with finding data.");
+    res.render(login.ejs);
   }
 });
 

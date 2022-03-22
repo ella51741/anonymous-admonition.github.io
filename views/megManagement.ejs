@@ -46,7 +46,9 @@
         <% data.forEach(message => { %>
         <li key="<%= message._id %>">
           <div>
-            <a href="./messagelist/<%= message._id %>"><%= message.topic %></a
+            <a href="" id="topic"
+              ><%= message.topic %>
+              <p><%= message.content %></p></a
             ><button class="delete">
               <i class="fa-solid fa-trash-can"></i>
             </button>
@@ -57,10 +59,24 @@
     </div>
     <script>
       window.onload = function () {
+        //建立刪除按鈕
         let button = document.querySelectorAll(".delete");
         console.log(button);
         for (let i = 0; i < button.length; i++) {
           button[i].addEventListener("click", del);
+        }
+        //建立下拉內容
+        let topic = document.querySelectorAll("#topic");
+        console.log(topic);
+        for (let i = 0; i < topic.length; i++) {
+          topic[i].addEventListener("click", showContent);
+        }
+        function showContent(e) {
+          event.preventDefault();
+          let elem = e.target.children;
+          let p = elem[0];
+          console.log(p);
+          p.classList.toggle("done");
         }
         function del(e) {
           let btn = e.target.parentElement;
