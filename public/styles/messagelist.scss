@@ -41,7 +41,7 @@
       background-image: url("/styles/img/angels.png");
       animation: play 1s steps(2) infinite alternate;
       &:hover {
-        box-shadow: 3px 3px 100px #f3d42e;
+        transform: translate(0, 2px);
       }
     }
 

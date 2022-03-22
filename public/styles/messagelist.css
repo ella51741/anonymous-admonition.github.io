@@ -57,8 +57,8 @@
 }
 
 .list .religion .man:hover {
-  -webkit-box-shadow: 3px 3px 100px #f3d42e;
-          box-shadow: 3px 3px 100px #f3d42e;
+  -webkit-transform: translate(0, 2px);
+          transform: translate(0, 2px);
 }
 
 .list .done {
