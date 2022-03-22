@@ -38,7 +38,27 @@
 }
 
 .megManagement li button:hover {
+  background-color: #ffe3aa;
+  border: 0.1rem solid #eb7d4e;
+  cursor: pointer;
   -webkit-transform: translate(0, 2px);
           transform: translate(0, 2px);
+}
+
+.megManagement li button i {
+  color: #5d6c89;
+}
+
+.megManagement li button i:hover {
+  color: #eb7d4e;
+}
+
+@media screen and (max-width: 500px) {
+  .megManagement li a {
+    font-size: 1rem;
+  }
+  .megManagement li p {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=megManagement.css.map */

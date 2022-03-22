@@ -1,5 +1,5 @@
 .login {
-  padding: 4rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,7 +44,7 @@
 }
 
 .signup {
-  padding: 4rem;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,5 +121,23 @@ footer {
   }
   100% {
     transform: translate(0, 15px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .i12 {
+    display: none;
+  }
+  .i13 {
+    animation: jump 0.5s ease 1s infinite forwards;
+  }
+  .i14 {
+    animation: jump 0.5s ease 1s infinite forwards;
+  }
+  .i15 {
+    animation: jump 0.5s ease 1s infinite forwards;
+  }
+  .i17 {
+    animation: jump 0.5s ease 1s infinite forwards;
   }
 }

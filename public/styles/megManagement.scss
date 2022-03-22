@@ -30,7 +30,28 @@
       background-color: #bae0ff;
       border: 0.1rem solid #5d6c89;
       &:hover {
+        background-color: #ffe3aa;
+        border: 0.1rem solid #eb7d4e;
+        cursor: pointer;
         transform: translate(0, 2px);
+      }
+      i {
+        color: #5d6c89;
+        &:hover {
+          color: #eb7d4e;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .megManagement {
+    li {
+      a {
+        font-size: 1rem;
+      }
+      p {
+        font-size: 1rem;
       }
     }
   }

@@ -1,5 +1,5 @@
 .login {
-  padding: 4rem;
+  padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,7 +67,7 @@
 }
 
 .signup {
-  padding: 4rem;
+  padding: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,6 +195,28 @@ footer img {
   100% {
     -webkit-transform: translate(0, 15px);
             transform: translate(0, 15px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .i12 {
+    display: none;
+  }
+  .i13 {
+    -webkit-animation: jump 0.5s ease 1s infinite forwards;
+            animation: jump 0.5s ease 1s infinite forwards;
+  }
+  .i14 {
+    -webkit-animation: jump 0.5s ease 1s infinite forwards;
+            animation: jump 0.5s ease 1s infinite forwards;
+  }
+  .i15 {
+    -webkit-animation: jump 0.5s ease 1s infinite forwards;
+            animation: jump 0.5s ease 1s infinite forwards;
+  }
+  .i17 {
+    -webkit-animation: jump 0.5s ease 1s infinite forwards;
+            animation: jump 0.5s ease 1s infinite forwards;
   }
 }
 /*# sourceMappingURL=login.css.map */

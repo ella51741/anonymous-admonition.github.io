@@ -50,31 +50,15 @@
   height: 68px;
   position: absolute;
   left: 62vw;
-  top: 40vh;
+  top: 30vh;
   background-image: url("/styles/img/angels.png");
   -webkit-animation: play 1s steps(2) infinite alternate;
           animation: play 1s steps(2) infinite alternate;
 }
 
-.list .religion .p {
-  text-decoration: none;
-  color: red;
-  background-color: white;
-  border-radius: 10px;
-  padding: 0.25rem;
-  font-size: 0.5rem;
-  display: inline;
-  position: absolute;
-  left: 62vw;
-  top: 30vh;
-  -webkit-animation: jump 0.5s ease-in-out 0.5s infinite forwards;
-          animation: jump 0.5s ease-in-out 0.5s infinite forwards;
-}
-
-.list .religion .p:hover {
+.list .religion .man:hover {
   -webkit-box-shadow: 3px 3px 100px #f3d42e;
           box-shadow: 3px 3px 100px #f3d42e;
-  background-color: #f3d42e;
 }
 
 .list .done {
@@ -88,8 +72,8 @@
             transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(0, 1px);
-            transform: translate(0, 1px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
@@ -99,8 +83,8 @@
             transform: translate(0, 0);
   }
   100% {
-    -webkit-transform: translate(0, 1px);
-            transform: translate(0, 1px);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
@@ -134,6 +118,12 @@
     width: 40vw;
     font-size: 1rem;
     padding: 0.5rem;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  .list li a {
+    margin: 0.5rem 0;
   }
 }
 /*# sourceMappingURL=messagelist.css.map */
