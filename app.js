@@ -86,7 +86,7 @@ app.post("/addmessage", async (req, res, next) => {
       .then(() => {
         console.log("Data has been saved");
         console.log(newMessage);
-        res.render("addmessage.ejs");
+        res.render("reAdd.ejs");
       })
       .catch((e) => {
         res.send("Error!!");
@@ -215,6 +215,17 @@ app.get("/megManagement", requireLogin, async (req, res) => {
     res.render("megManagement.ejs", { data });
   } catch {
     res.render(login.ejs);
+  }
+});
+
+//登出
+app.get("/logout", async (req, res) => {
+  try {
+    res.clearCookie("connect.sid");
+    console.log("cookie cleanup");
+    res.render("login.ejs");
+  } catch {
+    console.log("Error with cookie.");
   }
 });
 
