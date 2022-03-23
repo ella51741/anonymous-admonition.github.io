@@ -44,6 +44,7 @@ body {
   background-color: #ffe3aa;
   border: 0.1rem solid #eb7d4e;
   cursor: pointer;
+  color: #eb7d4e;
 }
 
 .add img {
