@@ -72,7 +72,7 @@ mongoose
   });
 
 //******* 留言板內容 ******/
-app.get("/addmessage", (req, res) => {
+app.get("/", (req, res) => {
   res.render("addmessage.ejs");
 });
 
@@ -96,7 +96,7 @@ app.post("/addmessage", async (req, res, next) => {
   }
 });
 
-app.get("/", async (req, res, next) => {
+app.get("/messagelist", async (req, res, next) => {
   try {
     let data = await Message.find();
     console.log(data);
